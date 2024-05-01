@@ -945,9 +945,9 @@ a {
       background-position: right center;
       padding: 0; }
     .header__button--desktop--bg-repair {
-      background-image: url("/src/img/components/header/repair.svg"); }
+      background-image: url(img/components/header/repair.svg); }
     .header__button--desktop--bg-check {
-      background-image: url("/src/img/components/header/checkstatus.svg"); }
+      background-image: url(img/components/header/checkstatus.svg); }
   .hidden-768 {
     display: inline; }
   .hidden-1200 {
@@ -1072,9 +1072,9 @@ a {
       background-position: right center;
       padding: 0; }
     .header__button--desktop--bg-repair {
-      background-image: url("/src/img/components/header/repair.svg"); }
+      background-image: url(img/components/header/repair.svg); }
     .header__button--desktop--bg-check {
-      background-image: url("/src/img/components/header/checkstatus.svg"); }
+      background-image: url(img/components/header/checkstatus.svg); }
   .about__slide-menu {
     overflow: visible;
     flex-wrap: wrap;
