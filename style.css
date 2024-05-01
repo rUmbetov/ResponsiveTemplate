@@ -735,7 +735,7 @@ button.swiper-pagination-bullet {
 }
 
 body {
-  font-family: TTLakes, Sans-serif, Arial, serif;
+  font-family: TTLakes;
   font-weight: 300;
   display: flex; }
 
@@ -751,7 +751,7 @@ a {
     width: 80vw; } }
 
 button {
-  font-family: TTLakes, Sans-serif, Arial, serif; }
+  font-family: TTLakes; }
 
 .container {
   margin: 0 auto;
@@ -810,6 +810,21 @@ textarea:not([rows]) {
 /* Anything that has been anchored to should have extra scroll margin */
 :target {
   scroll-margin-block: 5ex; }
+
+@font-face {
+  font-family: 'TTLakes';
+  src: url(../../src/fonts/TTLakes-Bold.woff2) format("woff2");
+  font-weight: 600; }
+
+@font-face {
+  font-family: 'TTLakes';
+  src: url(../../src/fonts/TTLakes-Medium.woff2) format("woff2");
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'TTLakes';
+  src: url(../../src/fonts/TTLakes-Regular.woff2) format("woff2");
+  font-weight: 300; }
 
 .body--bg-color {
   background-color: #F8F8F8; }
