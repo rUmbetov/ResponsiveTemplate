@@ -961,7 +961,7 @@ a {
     font-size: 28px;
     font-weight: 600;
     line-height: 40px;
-    color: #1b1c21; }
+    color: #1B1C21; }
     .about__title-deco {
       display: flex;
       justify-content: space-between;
@@ -1169,7 +1169,7 @@ a {
     /*background-position: left center;*/
     background-size: contain;
     /*background-repeat: no-repeat;*/
-    color: #7e7e82; }
+    color: #7E7E82; }
   .left-aside__footer {
     position: fixed;
     bottom: 0;
@@ -1208,7 +1208,7 @@ a {
     cursor: pointer;
     font-size: 16px; }
   .left-aside__language--active {
-    color: #7e7e82; }
+    color: #7E7E82; }
 
 @media (min-width: 768px) {
   .left-aside {
@@ -1235,7 +1235,7 @@ a {
   .header-small__title {
     font-size: 16px;
     font-weight: 300;
-    color: #7e7e82;
+    color: #7E7E82;
     text-transform: uppercase; }
 
 .brand-repair {
@@ -1438,7 +1438,7 @@ ul {
     right: 0;
     height: 100vh;
     background-color: #fff;
-    color: black; }
+    color: #1B1C21; }
   .feedback-modal__button-close {
     background-image: url(img/common/burger-close.svg);
     background-repeat: no-repeat;
@@ -1459,7 +1459,7 @@ ul {
     font-size: 28px;
     font-weight: 600;
     line-height: 40px;
-    color: #1b1c21; }
+    color: #1B1C21; }
   .feedback-modal__deco-line {
     background-image: url(img/components/about/title-higlight.svg);
     background-repeat: no-repeat;
@@ -1492,7 +1492,7 @@ ul {
   .feedback-modal__personal-data {
     font-size: 14px;
     line-height: 16px;
-    color: #7e7e82;
+    color: #7E7E82;
     font-weight: 500; }
     .feedback-modal__personal-data--color {
       color: #ff3e79; }
@@ -1637,7 +1637,7 @@ ul {
     .price__notes--link {
       display: inline-flex;
       font-size: 16px;
-      color: #1b1c21; }
+      color: #1B1C21; }
     .price__notes--arrow {
       width: 24px;
       height: 24px;
@@ -1661,12 +1661,12 @@ ul {
   margin-top: 12px;
   margin-left: 16px;
   font-size: 14px;
-  color: #7e7e82; }
+  color: #7E7E82; }
 
 .brand2__desc {
   margin-left: 16px;
   font-size: 14px;
-  color: #1b1c21; }
+  color: #1B1C21; }
 
 .brand2__btn {
   width: 120px;
@@ -1780,7 +1780,7 @@ ul {
       font-size: 14px; }
     .price__notes--link {
       font-size: 16px;
-      color: #1b1c21; }
+      color: #1B1C21; }
   .swiper-pagination {
     display: none; } }
 
