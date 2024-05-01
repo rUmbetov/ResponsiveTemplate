@@ -734,29 +734,6 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
-body {
-  font-family: TTLakes;
-  font-weight: 300;
-  display: flex; }
-
-a {
-  color: #7e7e82;
-  text-decoration: none; }
-
-.main {
-  width: 100vw; }
-
-@media (min-width: 1366px) {
-  .main {
-    width: 80vw; } }
-
-button {
-  font-family: TTLakes; }
-
-.container {
-  margin: 0 auto;
-  padding: 16px 0; }
-
 /* Box sizing rules */
 *,
 *::before,
@@ -813,17 +790,17 @@ textarea:not([rows]) {
 
 @font-face {
   font-family: 'TTLakes';
-  src: url(../../src/fonts/TTLakes-Bold.woff2) format("woff2");
+  src: url(./fonts/TTLakes-Bold.woff2) format("woff2");
   font-weight: 600; }
 
 @font-face {
   font-family: 'TTLakes';
-  src: url(../../src/fonts/TTLakes-Medium.woff2) format("woff2");
+  src: url(./fonts/TTLakes-Medium.woff2) format("woff2");
   font-weight: 400; }
 
 @font-face {
   font-family: 'TTLakes';
-  src: url(../../src/fonts/TTLakes-Regular.woff2) format("woff2");
+  src: url(./fonts/TTLakes-Regular.woff2) format("woff2");
   font-weight: 300; }
 
 .body--bg-color {
@@ -843,7 +820,7 @@ textarea:not([rows]) {
     align-items: center;
     gap: 25px; }
   .header__button {
-    background-image: url(img/components/header/burger.svg); }
+    background-image: url(./static/burger.svg); }
   .header__img--ico-mod {
     width: 40px;
     height: 40px;
@@ -855,7 +832,7 @@ textarea:not([rows]) {
     align-items: center;
     gap: 15px; }
   .header__logo-img {
-    background-image: url(img/components/header/logo.svg);
+    background-image: url(./static/logo.svg);
     width: 98px;
     height: 52px; }
   .header__border-line {
@@ -869,15 +846,15 @@ textarea:not([rows]) {
     align-items: center;
     gap: 15px; }
   .header__call-img {
-    background-image: url(img/components/header/call.svg); }
+    background-image: url(./static/call.svg); }
   .header__chat-img {
-    background-image: url(img/components/header/chat.svg); }
+    background-image: url(./static/chat.svg); }
   .header__profile-img {
-    background-image: url(img/components/header/profile.svg); }
+    background-image: url(./static/profile.svg); }
   .header__repair-img {
-    background-image: url(img/components/header/repair.svg); }
+    background-image: url(./static/repair.svg); }
   .header__check-img {
-    background-image: url(img/components/header/checkstatus.svg); }
+    background-image: url(./static/checkstatus.svg); }
   .header__menu--mobile-laptop {
     display: flex;
     gap: 10px; }
@@ -926,9 +903,9 @@ textarea:not([rows]) {
       background-position: right center;
       padding: 0; }
     .header__button--desktop--bg-repair {
-      background-image: url(img/components/header/repair.svg); }
+      background-image: url(./static/repair.svg); }
     .header__button--desktop--bg-check {
-      background-image: url(img/components/header/checkstatus.svg); }
+      background-image: url(./static/checkstatus.svg); }
   .hidden-768 {
     display: inline; }
   .hidden-1200 {
@@ -954,7 +931,7 @@ textarea:not([rows]) {
       gap: 16px;
       align-items: center; }
   .about__deco-line {
-    background-image: url(img/components/about/title-higlight.svg);
+    background-image: url(./static/title-higlight.svg);
     background-repeat: no-repeat;
     width: 4px;
     height: 40px; }
@@ -987,7 +964,7 @@ textarea:not([rows]) {
     overflow: hidden;
     max-height: 90px; }
   .about__button::before {
-    content: url(img/common/arrow-link.svg);
+    content: url(./static/arrow-link.svg);
     transform: translateX(-5px); }
   .about__button {
     display: flex;
@@ -1053,9 +1030,9 @@ textarea:not([rows]) {
       background-position: right center;
       padding: 0; }
     .header__button--desktop--bg-repair {
-      background-image: url(img/components/header/repair.svg); }
+      background-image: url(./static/repair.svg); }
     .header__button--desktop--bg-check {
-      background-image: url(img/components/header/checkstatus.svg); }
+      background-image: url(./static/checkstatus.svg); }
   .about__slide-menu {
     overflow: visible;
     flex-wrap: wrap;
@@ -1114,17 +1091,17 @@ textarea:not([rows]) {
     display: flex;
     gap: 15px; }
   .left-aside--button-burger {
-    background-image: url(img/common/burger-close.svg);
+    background-image: url(./static/burger-close.svg);
     width: 40px;
     height: 40px; }
   .left-aside__logo {
     display: flex; }
   .left-aside__logo-img {
-    background-image: url(img/components/header/logo.svg);
+    background-image: url(./static/logo.svg);
     width: 98px;
     height: 52px; }
   .left-aside--button-search {
-    background-image: url(img/components/aside/search.svg);
+    background-image: url(./static/search.svg);
     width: 40px;
     height: 40px; }
   .left-aside__nav {
@@ -1145,8 +1122,7 @@ textarea:not([rows]) {
     left: 0;
     width: 4px;
     height: 32px;
-    background: transparent url(img/components/aside/highlight.svg) no-repeat left center;
-    /*background-image: url(img/aside/highlight.svg);*/
+    background: transparent url(./static/highlight.svg) no-repeat left center;
     /*background-position: left center;*/
     background-size: contain;
     /*background-repeat: no-repeat;*/
@@ -1167,11 +1143,11 @@ textarea:not([rows]) {
   .left-aside__footer-menu > a:hover {
     filter: opacity(50%); }
   .left-aside--call-img {
-    background-image: url(img/components/header/call.svg); }
+    background-image: url(./static/call.svg); }
   .left-aside--chat-img {
-    background-image: url(img/components/header/chat.svg); }
+    background-image: url(./static/chat.svg); }
   .left-aside--profile-img {
-    background-image: url(img/components/header/profile.svg); }
+    background-image: url(./static/profile.svg); }
   .left-aside__mail {
     margin-top: 16px; }
   .left-aside_number {
@@ -1245,10 +1221,10 @@ textarea:not([rows]) {
 .brand__go {
   width: 40px;
   height: 40px;
-  background-image: url("img/common/go.svg"); }
+  background-image: url(./static/go.svg); }
 
 .brand__button::before {
-  content: url("img/common/arrow-link.svg");
+  content: url(./static/arrow-link.svg);
   transform: translateX(-5px); }
 
 .brand__button {
@@ -1261,28 +1237,28 @@ textarea:not([rows]) {
   margin-left: 32px; }
 
 .brand--company-lenovo {
-  background-image: url(img/components/brand-repair/BitmapLenovo.svg); }
+  background-image: url(./static/BitmapLenovo.svg); }
 
 .brand--company-samsung {
-  background-image: url(img/components/brand-repair/BitmapSamsung.svg); }
+  background-image: url(./static/BitmapSamsung.svg); }
 
 .brand--company-apple {
-  background-image: url(img/components/brand-repair/Bitmapapple.svg); }
+  background-image: url(./static/Bitmapapple.svg); }
 
 .brand--company-bosch {
-  background-image: url(img/components/brand-repair/BitmapBosch.svg); }
+  background-image: url(./static/BitmapBosch.svg); }
 
 .brand--company-hp {
-  background-image: url(img/components/brand-repair/Bitmaphp.svg); }
+  background-image: url(./static/Bitmaphp.svg); }
 
 .brand--company-acer {
-  background-image: url(img/components/brand-repair/Bitmapacer.svg); }
+  background-image: url(./static/Bitmapacer.svg); }
 
 .brand--company-sony {
-  background-image: url(img/components/brand-repair/Bitmapsony.svg); }
+  background-image: url(./static/Bitmapsony.svg); }
 
 .brand--company-viewSonic {
-  background-image: url(img/components/brand-repair/BitmapViewsonic.svg); }
+  background-image: url(./static/BitmapViewsonic.svg); }
 
 .swiper-pagination {
   margin-top: 16px;
@@ -1337,10 +1313,10 @@ ul {
   right: 10%;
   width: 40px;
   height: 40px;
-  background-image: url(img/common/go.svg); }
+  background-image: url(./static/go.svg); }
 
 .technique__button::before {
-  content: url(img/common/arrow-link.svg);
+  content: url(./static/arrow-link.svg);
   transform: translateX(-5px); }
 
 .technique__button {
@@ -1353,28 +1329,28 @@ ul {
   margin-left: 32px; }
 
 .technique--company-lenovo {
-  background-image: url(img/components/brand-repair/BitmapLenovo.svg); }
+  background-image: url(./static/BitmapLenovo.svg); }
 
 .technique--company-samsung {
-  background-image: url(img/components/brand-repair/BitmapSamsung.svg); }
+  background-image: url(./static/BitmapSamsung.svg); }
 
 .technique--company-apple {
-  background-image: url(img/components/brand-repair/Bitmapapple.svg); }
+  background-image: url(./static/Bitmapapple.svg); }
 
 .technique--company-bosch {
-  background-image: url(img/components/brand-repair/BitmapBosch.svg); }
+  background-image: url(./static/BitmapBosch.svg); }
 
 .technique--company-hp {
-  background-image: url(img/components/brand-repair/Bitmaphp.svg); }
+  background-image: url(./static/Bitmaphp.svg); }
 
 .technique--company-acer {
-  background-image: url(img/components/brand-repair/Bitmapacer.svg); }
+  background-image: url(./static/Bitmapacer.svg); }
 
 .technique--company-sony {
-  background-image: url(img/components/brand-repair/Bitmapsony.svg); }
+  background-image: url(./static/Bitmapsony.svg); }
 
 .technique--company-viewSonic {
-  background-image: url(img/components/brand-repair/BitmapViewsonic.svg); }
+  background-image: url(./static/BitmapViewsonic.svg); }
 
 .swiper-pagination {
   margin-top: 16px;
@@ -1422,7 +1398,7 @@ ul {
     background-color: #fff;
     color: #1B1C21; }
   .feedback-modal__button-close {
-    background-image: url(img/common/burger-close.svg);
+    background-image: url(./static/burger-close.svg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 40px;
@@ -1443,7 +1419,7 @@ ul {
     line-height: 40px;
     color: #1B1C21; }
   .feedback-modal__deco-line {
-    background-image: url(img/components/about/title-higlight.svg);
+    background-image: url(./static/title-higlight.svg);
     background-repeat: no-repeat;
     width: 4px;
     height: 40px; }
@@ -1487,7 +1463,7 @@ ul {
     width: 136px;
     height: 32px;
     color: #fff;
-    background-image: url(img/common/goside.svg);
+    background-image: url(./static/goside.svg);
     background-repeat: no-repeat;
     background-position: 101px center;
     cursor: pointer; }
@@ -1519,7 +1495,7 @@ ul {
     background-color: #fff;
     color: black; }
   .call-modal__button-close {
-    background-image: url(img/common/burger-close.svg);
+    background-image: url(./static/burger-close.svg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 40px;
@@ -1540,7 +1516,7 @@ ul {
     line-height: 40px;
     color: #1b1c21; }
   .call-modal__deco-line {
-    background-image: url(img/components/about/title-higlight.svg);
+    background-image: url(./static/title-higlight.svg);
     background-repeat: no-repeat;
     width: 4px;
     height: 40px; }
@@ -1584,7 +1560,7 @@ ul {
     width: 136px;
     height: 32px;
     color: #fff;
-    background-image: url(img/common/goside.svg);
+    background-image: url(./static/goside.svg);
     background-repeat: no-repeat;
     background-position: 101px center;
     cursor: pointer; }
@@ -1623,7 +1599,7 @@ ul {
     .price__notes--arrow {
       width: 24px;
       height: 24px;
-      background-image: url(img/common/more.svg); }
+      background-image: url(./static/more.svg); }
 
 .brand2__card {
   margin-top: 16px;
@@ -1667,7 +1643,7 @@ ul {
   text-transform: uppercase;
   letter-spacing: -0.15px;
   padding-left: 12px;
-  background-image: url(img/common/goside.svg);
+  background-image: url(./static/goside.svg);
   background-repeat: no-repeat;
   background-position: center right; }
 
@@ -1677,10 +1653,10 @@ ul {
   right: 10%;
   width: 40px;
   height: 40px;
-  background-image: url(img/common/go.svg); }
+  background-image: url(./static/go.svg); }
 
 .brand2__button::before {
-  content: url(img/common/arrow-link.svg);
+  content: url(./static/arrow-link.svg);
   transform: translateX(-5px); }
 
 .brand2__button {
@@ -1693,28 +1669,28 @@ ul {
   margin-left: 32px; }
 
 .brand2--company-lenovo {
-  background-image: url(img/components/brand-repair/BitmapLenovo.svg); }
+  background-image: url(./static/BitmapLenovo.svg); }
 
 .brand2--company-samsung {
-  background-image: url(img/components/brand-repair/BitmapSamsung.svg); }
+  background-image: url(./static/BitmapSamsung.svg); }
 
 .brand2--company-apple {
-  background-image: url(img/components/brand-repair/Bitmapapple.svg); }
+  background-image: url(./static/Bitmapapple.svg); }
 
 .brand2--company-bosch {
-  background-image: url(img/components/brand-repair/BitmapBosch.svg); }
+  background-image: url(./static/BitmapBosch.svg); }
 
 .brand2--company-hp {
-  background-image: url(img/components/brand-repair/Bitmaphp.svg); }
+  background-image: url(./static/Bitmaphp.svg); }
 
 .brand2--company-acer {
-  background-image: url(img/components/brand-repair/Bitmapacer.svg); }
+  background-image: url(./static/Bitmapacer.svg); }
 
 .brand2--company-sony {
-  background-image: url(img/components/brand-repair/Bitmapsony.svg); }
+  background-image: url(./static/Bitmapsony.svg); }
 
 .brand2--company-viewSonic {
-  background-image: url(img/components/brand-repair/BitmapViewsonic.svg); }
+  background-image: url(./static/BitmapViewsonic.svg); }
 
 .swiper-pagination {
   margin-top: 16px;
@@ -1802,6 +1778,29 @@ ul {
   .footer__right {
     width: 330px;
     text-align: right; } }
+
+body {
+  font-family: TTLakes;
+  font-weight: 300;
+  display: flex; }
+
+a {
+  color: #7e7e82;
+  text-decoration: none; }
+
+.main {
+  width: 100vw; }
+
+@media (min-width: 1366px) {
+  .main {
+    width: 80vw; } }
+
+button {
+  font-family: TTLakes; }
+
+.container {
+  margin: 0 auto;
+  padding: 16px 0; }
 
 
 /*# sourceMappingURL=style.css.map*/
