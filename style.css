@@ -734,27 +734,6 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
-@font-face {
-  font-family: "TTLakes";
-  src: url("../../fonts/TTLakes-Bold.woff2") format("woff2");
-  font-weight: 600;
-  font-display: swap;
-  font-style: normal; }
-
-@font-face {
-  font-family: "TTLakes";
-  src: url("../../fonts/TTLakes-Medium.woff2") format("woff2");
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal; }
-
-@font-face {
-  font-family: "TTLakes";
-  src: url("../../fonts/TTLakes-Regular.woff2") format("woff2");
-  font-weight: 300;
-  font-display: swap;
-  font-style: normal; }
-
 body {
   font-family: TTLakes, Sans-serif, Arial, serif;
   font-weight: 300;
