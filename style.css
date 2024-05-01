@@ -736,21 +736,21 @@ button.swiper-pagination-bullet {
 
 @font-face {
   font-family: "TTLakes";
-  src: url("/src/fonts/TTLakes-Bold.woff2") format("woff2");
+  src: url("fonts/TTLakes-Bold.woff2") format("woff2");
   font-weight: 600;
   font-display: swap;
   font-style: normal; }
 
 @font-face {
   font-family: "TTLakes";
-  src: url("/src/fonts/TTLakes-Medium.woff2") format("woff2");
+  src: url("fonts/TTLakes-Medium.woff2") format("woff2");
   font-weight: 400;
   font-display: swap;
   font-style: normal; }
 
 @font-face {
   font-family: "TTLakes";
-  src: url("/src/fonts/TTLakes-Regular.woff2") format("woff2");
+  src: url("fonts/TTLakes-Regular.woff2") format("woff2");
   font-weight: 300;
   font-display: swap;
   font-style: normal; }
