@@ -736,94 +736,24 @@ button.swiper-pagination-bullet {
 
 @font-face {
   font-family: "TTLakes";
-  src: url("fonts/TTLakes-Bold.woff2") format("woff2");
+  src: url("../../fonts/TTLakes-Bold.woff2") format("woff2");
   font-weight: 600;
   font-display: swap;
   font-style: normal; }
 
 @font-face {
   font-family: "TTLakes";
-  src: url("fonts/TTLakes-Medium.woff2") format("woff2");
+  src: url("../../fonts/TTLakes-Medium.woff2") format("woff2");
   font-weight: 400;
   font-display: swap;
   font-style: normal; }
 
 @font-face {
   font-family: "TTLakes";
-  src: url("fonts/TTLakes-Regular.woff2") format("woff2");
+  src: url("../../fonts/TTLakes-Regular.woff2") format("woff2");
   font-weight: 300;
   font-display: swap;
   font-style: normal; }
-
-/* Prevent font size inflation */
-html {
-  text-size-adjust: none; }
-
-* {
-  box-sizing: border-box; }
-
-/* Remove default margin in favour of better control in authored CSS */
-body,
-h1,
-h2,
-h3,
-h4,
-figure,
-blockquote,
-dl,
-dd {
-  margin: 0; }
-
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
-  list-style: none; }
-
-/* Set core body defaults */
-body {
-  min-height: 100vh;
-  line-height: 1.5; }
-
-/* Set shorter line heights on headings and interactive elements */
-h1,
-h2,
-h3,
-h4,
-button,
-input,
-label {
-  line-height: 1.1; }
-
-/* Balance text wrapping on headings */
-h1,
-h2,
-h3,
-h4 {
-  text-wrap: balance; }
-
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-  color: currentColor; }
-
-/* Make images easier to work with */
-picture {
-  max-width: 100%;
-  display: block; }
-
-/* Inherit fonts for inputs and buttons */
-input,
-textarea,
-select {
-  font: inherit; }
-
-/* Make sure textarea without a rows attribute are not tiny */
-textarea:not([rows]) {
-  min-height: 10em; }
-
-/* Anything that has been anchored to should have extra scroll margin */
-:target {
-  scroll-margin-block: 5ex; }
 
 body {
   font-family: TTLakes, Sans-serif, Arial, serif;
@@ -841,9 +771,66 @@ a {
   .main {
     width: 80vw; } }
 
+button {
+  font-family: TTLakes, Sans-serif, Arial, serif; }
+
 .container {
   margin: 0 auto;
   padding: 16px 0; }
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Prevent font size inflation */
+html {
+  text-size-adjust: none; }
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin: 0; }
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none; }
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5; }
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1; }
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance; }
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor; }
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block; }
+
+/* Make sure textarea without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em; }
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex; }
 
 .body--bg-color {
   background-color: #F8F8F8; }
@@ -1171,8 +1158,7 @@ a {
     /*background-repeat: no-repeat;*/
     color: #7E7E82; }
   .left-aside__footer {
-    position: fixed;
-    bottom: 0;
+    margin-top: 100px;
     padding-bottom: 32px; }
   .left-aside__footer-menu {
     display: flex;
@@ -1244,14 +1230,16 @@ a {
 .brand__card {
   margin-top: 16px;
   margin-left: 16px;
-  width: 208px;
-  padding: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: #fff;
   border: 1px solid #eaeaea;
   border-radius: 6px; }
+
+.brand__link {
+  width: 208px;
+  padding: 16px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between; }
 
 .brand__company {
   background-repeat: no-repeat;
@@ -1337,7 +1325,7 @@ a {
 ul {
   padding-inline-start: 0; }
 
-.brand1__card {
+.technique__card {
   margin-top: 16px;
   margin-left: 16px;
   width: 208px;
@@ -1349,7 +1337,7 @@ ul {
   border: 1px solid #eaeaea;
   border-radius: 6px; }
 
-.brand1__go {
+.technique__go {
   position: absolute;
   bottom: 10%;
   right: 10%;
@@ -1357,11 +1345,11 @@ ul {
   height: 40px;
   background-image: url(img/common/go.svg); }
 
-.brand1__button::before {
+.technique__button::before {
   content: url(img/common/arrow-link.svg);
   transform: translateX(-5px); }
 
-.brand1__button {
+.technique__button {
   display: none;
   align-items: center;
   border: none;
@@ -1370,28 +1358,28 @@ ul {
   font-size: 16px;
   margin-left: 32px; }
 
-.brand1--company-lenovo {
+.technique--company-lenovo {
   background-image: url(img/components/brand-repair/BitmapLenovo.svg); }
 
-.brand1--company-samsung {
+.technique--company-samsung {
   background-image: url(img/components/brand-repair/BitmapSamsung.svg); }
 
-.brand1--company-apple {
+.technique--company-apple {
   background-image: url(img/components/brand-repair/Bitmapapple.svg); }
 
-.brand1--company-bosch {
+.technique--company-bosch {
   background-image: url(img/components/brand-repair/BitmapBosch.svg); }
 
-.brand1--company-hp {
+.technique--company-hp {
   background-image: url(img/components/brand-repair/Bitmaphp.svg); }
 
-.brand1--company-acer {
+.technique--company-acer {
   background-image: url(img/components/brand-repair/Bitmapacer.svg); }
 
-.brand1--company-sony {
+.technique--company-sony {
   background-image: url(img/components/brand-repair/Bitmapsony.svg); }
 
-.brand1--company-viewSonic {
+.technique--company-viewSonic {
   background-image: url(img/components/brand-repair/BitmapViewsonic.svg); }
 
 .swiper-pagination {
@@ -1401,7 +1389,7 @@ ul {
     background-color: gray; }
 
 @media (min-width: 768px) {
-  .brand1 {
+  .technique {
     display: flex;
     flex-wrap: wrap;
     max-height: 142px;
@@ -1410,19 +1398,19 @@ ul {
     row-gap: 8px;
     -moz-column-gap: 16px;
          column-gap: 16px; }
-    .brand1__card {
+    .technique__card {
       width: 180px;
       margin: 0; }
-    .brand1__button {
+    .technique__button {
       display: flex; }
   .swiper-pagination {
     display: none; } }
 
 @media (min-width: 1366px) {
-  .brand1 {
+  .technique {
     max-width: 78vw;
     padding: 24px 33px; }
-    .brand1__card {
+    .technique__card {
       width: 213px; } }
 
 .feedback-modal {
