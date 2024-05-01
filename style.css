@@ -789,19 +789,45 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex; }
 
 @font-face {
-  font-family: 'TTLakes';
+  font-family: "TTLakes";
   src: url(./fonts/TTLakes-Bold.woff2) format("woff2");
-  font-weight: 600; }
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal; }
 
 @font-face {
-  font-family: 'TTLakes';
+  font-family: "TTLakes";
   src: url(./fonts/TTLakes-Medium.woff2) format("woff2");
-  font-weight: 400; }
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal; }
 
 @font-face {
-  font-family: 'TTLakes';
+  font-family: "TTLakes";
   src: url(./fonts/TTLakes-Regular.woff2) format("woff2");
-  font-weight: 300; }
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal; }
+
+body {
+  font-family: TTLakes, Sans-serif, Arial, serif;
+  font-weight: 300;
+  display: flex; }
+
+a {
+  color: #7e7e82;
+  text-decoration: none; }
+
+.main {
+  width: 100vw; }
+
+@media (min-width: 1366px) {
+  .main {
+    width: 80vw; } }
+
+.container {
+  margin: 0 auto;
+  padding: 16px 0; }
 
 .body--bg-color {
   background-color: #F8F8F8; }
@@ -1198,6 +1224,7 @@ textarea:not([rows]) {
   margin-top: 32px; }
 
 .brand__card {
+  width: 208px;
   margin-top: 16px;
   margin-left: 16px;
   background-color: #fff;
@@ -1778,29 +1805,6 @@ ul {
   .footer__right {
     width: 330px;
     text-align: right; } }
-
-body {
-  font-family: TTLakes;
-  font-weight: 300;
-  display: flex; }
-
-a {
-  color: #7e7e82;
-  text-decoration: none; }
-
-.main {
-  width: 100vw; }
-
-@media (min-width: 1366px) {
-  .main {
-    width: 80vw; } }
-
-button {
-  font-family: TTLakes; }
-
-.container {
-  margin: 0 auto;
-  padding: 16px 0; }
 
 
 /*# sourceMappingURL=style.css.map*/
