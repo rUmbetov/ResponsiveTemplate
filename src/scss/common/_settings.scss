@@ -1,0 +1,22 @@
+@import './variables.scss';
+body {
+  font-family: TTLakes, Sans-serif, Arial, serif;
+  font-weight: 300;
+  display: flex;
+}
+a {
+  color: #7e7e82;
+  text-decoration: none;
+}
+.main {
+  width: 100vw;
+}
+@media (min-width: $breakpoint_desktop) {
+  .main {
+    width: 80vw;
+  }
+}
+.container {
+  margin: 0 auto;
+  padding: 16px 0;
+}

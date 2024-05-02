@@ -1,0 +1,119 @@
+.feedback-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.8);
+  &__main {
+    box-shadow:
+      -16px 0 52px 0 rgba(14, 24, 80, 0.2),
+      2px 0 4px 0 rgba(69, 79, 126, 0.02);
+    position: relative;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background-color: #fff;
+    color: $dark-gray;
+  }
+  &__button-close {
+    background-image: url(../img/common/burger-close.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    margin-top: 24px;
+    margin-left: 16px;
+  }
+  &__title {
+    margin-top: 32px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  &__title1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 40px;
+    color: $dark-gray;
+  }
+  &__deco-line {
+    background-image: url(../img/components/about/title-higlight.svg);
+    background-repeat: no-repeat;
+    width: 4px;
+    height: 40px;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  &__input {
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    padding-left: 16px;
+    font-size: 16px;
+    &::placeholder {
+      color: #b5b6bc;
+    }
+  }
+  &__input {
+    &--small {
+      margin-top: 16px;
+      height: 48px;
+    }
+    &--big {
+      margin-top: 16px;
+      height: 118px;
+      &::placeholder {
+        transform: translateY(-35px);
+      }
+    }
+  }
+  &__personal-data {
+    font-size: 14px;
+    line-height: 16px;
+    color: $light-gray;
+    font-weight: 500;
+    &--color {
+      color: $modal-color;
+    }
+  }
+  &__btn-send {
+    align-self: end;
+    text-transform: uppercase;
+    background-color: $modal-color;
+    border: none;
+    border-radius: 50px;
+    width: 136px;
+    height: 32px;
+    color: #fff;
+    background-image: url(../img/common/goside.svg);
+    background-repeat: no-repeat;
+    background-position: 101px center;
+    cursor: pointer;
+  }
+}
+
+
+@media (min-width: $breakpoint_tablet) {
+  .feedback-modal__main {
+    width: 320px;
+  }
+}
+@media (min-width: $breakpoint_desktop) {
+  .feedback-modal {
+    &__main {
+      position: fixed;
+      width: 440px;
+    }
+    &__button-close {
+      position: absolute;
+      left: -75px;
+    }
+  }
+}
+

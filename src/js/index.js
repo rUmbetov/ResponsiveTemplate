@@ -1,0 +1,6 @@
+import '../scss/style.scss'
+import './readShowBtn'
+import './initSwiper'
+import './aside-menu'
+import './feedback-modal'
+import './call-modal'

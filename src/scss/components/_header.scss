@@ -1,0 +1,148 @@
+.body--bg-color {
+  background-color: $bgColor;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &--bordered-padding {
+    background-color: #fff;
+    padding: 20px 15px;
+    border-bottom: 2px solid #d9fff5;
+  }
+  &__left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+  }
+  &__button {
+    background-image: url(../img/components/header/burger.svg);
+  }
+  //&__burger{}
+  &__img--ico-mod {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  &__logo-img {
+    background-image: url(../img/components/header/logo.svg);
+    width: 98px;
+    height: 52px;
+  }
+  &__border-line {
+    height: 30px;
+    width: 2px;
+    background: rgba(234, 234, 234, 1);
+  }
+  &__border-line--left {
+    display: none;
+  }
+  &__right-menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  &__call-img {
+    background-image: url(../img/components/header/call.svg);
+  }
+  &__chat-img {
+    background-image: url(../img/components/header/chat.svg);
+  }
+  &__profile-img {
+    background-image: url(../img/components/header/profile.svg);
+  }
+  &__repair-img {
+    background-image: url(../img/components/header/repair.svg);
+  }
+  &__check-img {
+    background-image: url(../img/components/header/checkstatus.svg);
+  }
+  &__menu--mobile-laptop {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+.hidden-768 {
+  display: none;
+}
+.hidden-1200 {
+  display: none;
+}
+// hidden
+//Header__burger mobile
+// .header__menu--laptop{
+//   display: flex;
+//   gap: 10px;
+// }
+
+
+@media (min-width: $breakpoint_tablet) {
+  .hidden {
+    display: block;
+  }
+  .about__info {
+    margin-top: 32px;
+    flex-direction: row;
+    gap: 48px;
+  }
+  .container {
+    margin: 0 24px;
+  }
+  .header {
+    &__menu--laptop {
+      display: flex;
+      gap: 10px;
+    }
+    &__border-line {
+      display: none;
+    }
+    &__border-line--left {
+      display: block;
+    }
+  }
+}
+@media (min-width: $breakpoint_desktop) {
+  .header {
+    display: none;
+    &__button--desktop {
+      width: 182px;
+      height: 42px;
+      border: none;
+      background-color: transparent;
+      font-size: inherit;
+      font-family: inherit;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      background-repeat: no-repeat;
+      background-position: right center;
+      padding: 0;
+    }
+    &__button--desktop--bg-repair {
+      background-image: url(../img/components/header/repair.svg);
+    }
+    &__button--desktop--bg-check {
+      background-image: url(../img/components/header/checkstatus.svg);
+    }
+  }
+  .hidden-768 {
+    display: inline;
+  }
+  .hidden-1200 {
+    display: flex;
+  }
+}

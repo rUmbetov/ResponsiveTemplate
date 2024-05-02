@@ -1,0 +1,105 @@
+ul {
+  padding-inline-start: 0;
+}
+.technique {
+  &__card {
+    margin-top: 16px;
+    margin-left: 16px;
+    width: 208px;
+    height: 160px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+  }
+  &__company {
+  }
+  &__go {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/common/go.svg);
+  }
+  &__button::before {
+    content: url(../img/common/arrow-link.svg);
+    transform: translateX(-5px);
+  }
+  &__button {
+    display: none;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 32px;
+  }
+  &--company-lenovo {
+    background-image: url(../img/components/brand-repair/BitmapLenovo.svg);
+  }
+  &--company-samsung {
+    background-image: url(../img/components/brand-repair/BitmapSamsung.svg);
+  }
+  &--company-apple {
+    background-image: url(../img/components/brand-repair/Bitmapapple.svg);
+  }
+  &--company-bosch {
+    background-image: url(../img/components/brand-repair/BitmapBosch.svg);
+  }
+  &--company-hp {
+    background-image: url(../img/components/brand-repair/Bitmaphp.svg);
+  }
+  &--company-acer {
+    background-image: url(../img/components/brand-repair/Bitmapacer.svg);
+  }
+  &--company-sony {
+    background-image: url(../img/components/brand-repair/Bitmapsony.svg);
+  }
+  &--company-viewSonic {
+    background-image: url(../img/components/brand-repair/BitmapViewsonic.svg);
+  }
+}
+.swiper-pagination {
+  margin-top: 16px;
+  position: relative;
+  &-bullet {
+    background-color: gray;
+  }
+}
+
+
+
+@media (min-width: $breakpoint_tablet) {
+  .technique {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 142px;
+    overflow: hidden;
+    padding: 24px;
+    row-gap: 8px;
+    column-gap: 16px;
+    &__card {
+      width: 180px;
+      margin: 0;
+    }
+    &__button {
+      display: flex;
+    }
+  }
+  .swiper-pagination {
+    display: none;
+  }
+}
+
+@media (min-width: $breakpoint_desktop) {
+  .technique {
+    max-width: 78vw;
+    padding: 24px 33px;
+    &__card {
+      width: 213px;
+    }
+  }
+}
